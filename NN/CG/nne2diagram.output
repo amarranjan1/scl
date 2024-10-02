@@ -1,0 +1,279 @@
+Grammar
+
+    0 $accept: examples $end
+
+    1 examples: example
+    2         | examples example
+
+    3 example: NNE '\n'
+
+    4 NNE: compoundC
+
+    5 compoundC: '<' compoundR '-' concept_term '>'
+    6          | '<' concept_term '-' concept_term '>'
+
+    7 compoundR: '<' concept_term '-' rel_term '>'
+
+    8 concept_term: NNE
+    9             | concept
+
+   10 rel_term: sambanXaH
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    '\n' (10) 3
+    '-' (45) 5 6 7
+    '<' (60) 5 6 7
+    '>' (62) 5 6 7
+    error (256)
+    sambanXaH <nodeinfo> (258) 10
+    concept <nodeinfo> (259) 9
+
+
+Nonterminals, with rules where they appear
+
+    $accept (9)
+        on left: 0
+    examples (10)
+        on left: 1 2
+        on right: 0 2
+    example (11)
+        on left: 3
+        on right: 1 2
+    NNE <nodeinfo> (12)
+        on left: 4
+        on right: 3 8
+    compoundC <nodeinfo> (13)
+        on left: 5 6
+        on right: 4
+    compoundR <nodeinfo> (14)
+        on left: 7
+        on right: 5
+    concept_term <nodeinfo> (15)
+        on left: 8 9
+        on right: 5 6 7
+    rel_term <nodeinfo> (16)
+        on left: 10
+        on right: 7
+
+
+State 0
+
+    0 $accept: . examples $end
+
+    '<'  shift, and go to state 1
+
+    examples   go to state 2
+    example    go to state 3
+    NNE        go to state 4
+    compoundC  go to state 5
+
+
+State 1
+
+    5 compoundC: '<' . compoundR '-' concept_term '>'
+    6          | '<' . concept_term '-' concept_term '>'
+
+    concept  shift, and go to state 6
+    '<'      shift, and go to state 7
+
+    NNE           go to state 8
+    compoundC     go to state 5
+    compoundR     go to state 9
+    concept_term  go to state 10
+
+
+State 2
+
+    0 $accept: examples . $end
+    2 examples: examples . example
+
+    $end  shift, and go to state 11
+    '<'   shift, and go to state 1
+
+    example    go to state 12
+    NNE        go to state 4
+    compoundC  go to state 5
+
+
+State 3
+
+    1 examples: example .
+
+    $default  reduce using rule 1 (examples)
+
+
+State 4
+
+    3 example: NNE . '\n'
+
+    '\n'  shift, and go to state 13
+
+
+State 5
+
+    4 NNE: compoundC .
+
+    $default  reduce using rule 4 (NNE)
+
+
+State 6
+
+    9 concept_term: concept .
+
+    $default  reduce using rule 9 (concept_term)
+
+
+State 7
+
+    5 compoundC: '<' . compoundR '-' concept_term '>'
+    6          | '<' . concept_term '-' concept_term '>'
+    7 compoundR: '<' . concept_term '-' rel_term '>'
+
+    concept  shift, and go to state 6
+    '<'      shift, and go to state 7
+
+    NNE           go to state 8
+    compoundC     go to state 5
+    compoundR     go to state 9
+    concept_term  go to state 14
+
+
+State 8
+
+    8 concept_term: NNE .
+
+    $default  reduce using rule 8 (concept_term)
+
+
+State 9
+
+    5 compoundC: '<' compoundR . '-' concept_term '>'
+
+    '-'  shift, and go to state 15
+
+
+State 10
+
+    6 compoundC: '<' concept_term . '-' concept_term '>'
+
+    '-'  shift, and go to state 16
+
+
+State 11
+
+    0 $accept: examples $end .
+
+    $default  accept
+
+
+State 12
+
+    2 examples: examples example .
+
+    $default  reduce using rule 2 (examples)
+
+
+State 13
+
+    3 example: NNE '\n' .
+
+    $default  reduce using rule 3 (example)
+
+
+State 14
+
+    6 compoundC: '<' concept_term . '-' concept_term '>'
+    7 compoundR: '<' concept_term . '-' rel_term '>'
+
+    '-'  shift, and go to state 17
+
+
+State 15
+
+    5 compoundC: '<' compoundR '-' . concept_term '>'
+
+    concept  shift, and go to state 6
+    '<'      shift, and go to state 1
+
+    NNE           go to state 8
+    compoundC     go to state 5
+    concept_term  go to state 18
+
+
+State 16
+
+    6 compoundC: '<' concept_term '-' . concept_term '>'
+
+    concept  shift, and go to state 6
+    '<'      shift, and go to state 1
+
+    NNE           go to state 8
+    compoundC     go to state 5
+    concept_term  go to state 19
+
+
+State 17
+
+    6 compoundC: '<' concept_term '-' . concept_term '>'
+    7 compoundR: '<' concept_term '-' . rel_term '>'
+
+    sambanXaH  shift, and go to state 20
+    concept    shift, and go to state 6
+    '<'        shift, and go to state 1
+
+    NNE           go to state 8
+    compoundC     go to state 5
+    concept_term  go to state 19
+    rel_term      go to state 21
+
+
+State 18
+
+    5 compoundC: '<' compoundR '-' concept_term . '>'
+
+    '>'  shift, and go to state 22
+
+
+State 19
+
+    6 compoundC: '<' concept_term '-' concept_term . '>'
+
+    '>'  shift, and go to state 23
+
+
+State 20
+
+   10 rel_term: sambanXaH .
+
+    $default  reduce using rule 10 (rel_term)
+
+
+State 21
+
+    7 compoundR: '<' concept_term '-' rel_term . '>'
+
+    '>'  shift, and go to state 24
+
+
+State 22
+
+    5 compoundC: '<' compoundR '-' concept_term '>' .
+
+    $default  reduce using rule 5 (compoundC)
+
+
+State 23
+
+    6 compoundC: '<' concept_term '-' concept_term '>' .
+
+    $default  reduce using rule 6 (compoundC)
+
+
+State 24
+
+    7 compoundR: '<' concept_term '-' rel_term '>' .
+
+    $default  reduce using rule 7 (compoundR)

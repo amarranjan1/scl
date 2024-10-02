@@ -1,0 +1,14 @@
+ZENDIR=/home/osboxes/Zen/ML
+LTPROCBIN=/usr/bin/lt-proc
+TFPATH=/tmp/SKT_TEMP
+HTDOCSDIR=/var/www/html
+CGIDIR=/usr/lib/cgi-bin
+JAVAPATH=/usr/bin/javac
+HERITAGE_CGI_DIR=/SKT
+HERITAGE_CGI=/SKT/sktgraph2
+SCL_CGI=scl
+SCL_HTDOCS=scl
+HERITAGE_Graph_CGI=/SKT/sktgraph
+GraphvizDot=/usr/bin/dot
+MYPYTHONPATH=/usr/bin/python3
+APACHE_USER_GROUP=www-data:www-data

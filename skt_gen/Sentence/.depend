@@ -1,0 +1,116 @@
+/home/osboxes/Zen/ML/gen.cmo :
+/home/osboxes/Zen/ML/gen.cmx :
+/home/osboxes/Zen/ML/list2.cmo :
+/home/osboxes/Zen/ML/list2.cmx :
+/home/osboxes/Zen/ML/word.cmo : \
+    /home/osboxes/Zen/ML/list2.cmo
+/home/osboxes/Zen/ML/word.cmx : \
+    /home/osboxes/Zen/ML/list2.cmx
+/home/osboxes/Zen/ML/share.cmi :
+/home/osboxes/Zen/ML/share.cmo : \
+    /home/osboxes/Zen/ML/share.cmi
+/home/osboxes/Zen/ML/share.cmx : \
+    /home/osboxes/Zen/ML/share.cmi
+/home/osboxes/Zen/ML/unshare.cmo : \
+    /home/osboxes/Zen/ML/trie.cmo
+/home/osboxes/Zen/ML/unshare.cmx : \
+    /home/osboxes/Zen/ML/trie.cmx
+/home/osboxes/Zen/ML/trie.cmo : \
+    /home/osboxes/Zen/ML/word.cmo \
+    /home/osboxes/Zen/ML/list2.cmo \
+    /home/osboxes/Zen/ML/gen.cmo
+/home/osboxes/Zen/ML/trie.cmx : \
+    /home/osboxes/Zen/ML/word.cmx \
+    /home/osboxes/Zen/ML/list2.cmx \
+    /home/osboxes/Zen/ML/gen.cmx
+/home/osboxes/Zen/ML/mini.cmo : \
+    /home/osboxes/Zen/ML/trie.cmo \
+    /home/osboxes/Zen/ML/share.cmi \
+    /home/osboxes/Zen/ML/gen.cmo
+/home/osboxes/Zen/ML/mini.cmx : \
+    /home/osboxes/Zen/ML/trie.cmx \
+    /home/osboxes/Zen/ML/share.cmx \
+    /home/osboxes/Zen/ML/gen.cmx
+/home/osboxes/Zen/ML/deco.cmo : \
+    /home/osboxes/Zen/ML/word.cmo \
+    /home/osboxes/Zen/ML/trie.cmo \
+    /home/osboxes/Zen/ML/list2.cmo
+/home/osboxes/Zen/ML/deco.cmx : \
+    /home/osboxes/Zen/ML/word.cmx \
+    /home/osboxes/Zen/ML/trie.cmx \
+    /home/osboxes/Zen/ML/list2.cmx
+/home/osboxes/Zen/ML/lexmap.cmo : \
+    /home/osboxes/Zen/ML/word.cmo \
+    /home/osboxes/Zen/ML/list2.cmo \
+    /home/osboxes/Zen/ML/deco.cmo
+/home/osboxes/Zen/ML/lexmap.cmx : \
+    /home/osboxes/Zen/ML/word.cmx \
+    /home/osboxes/Zen/ML/list2.cmx \
+    /home/osboxes/Zen/ML/deco.cmx
+/home/osboxes/Zen/ML/minimap.cmi : \
+    /home/osboxes/Zen/ML/lexmap.cmo
+/home/osboxes/Zen/ML/minimap.cmo : \
+    /home/osboxes/Zen/ML/share.cmi \
+    /home/osboxes/Zen/ML/lexmap.cmo \
+    /home/osboxes/Zen/ML/deco.cmo \
+    /home/osboxes/Zen/ML/minimap.cmi
+/home/osboxes/Zen/ML/minimap.cmx : \
+    /home/osboxes/Zen/ML/share.cmx \
+    /home/osboxes/Zen/ML/lexmap.cmx \
+    /home/osboxes/Zen/ML/deco.cmx \
+    /home/osboxes/Zen/ML/minimap.cmi
+pada_structure.cmi :
+sentence_generator.cmo : \
+    /home/osboxes/Zen/ML/trie.cmo \
+    paths.cmo \
+    pada_structure.cmi \
+    /home/osboxes/Zen/ML/gen.cmo \
+    bank_lexer.cmo
+sentence_generator.cmx : \
+    /home/osboxes/Zen/ML/trie.cmx \
+    paths.cmx \
+    pada_structure.cmi \
+    /home/osboxes/Zen/ML/gen.cmx \
+    bank_lexer.cmx
+paths.cmo :
+paths.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/karaNa_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/karaNa_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/sampraxAna_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/sampraxAna_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/apAxAna_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/apAxAna_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/sakarmaka_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/sakarmaka_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/xvikarmaka1_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/xvikarmaka1_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/xvikarmaka2_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/xvikarmaka2_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/aaxikarma_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/aaxikarma_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/gawyarWa_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/gawyarWa_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/Sabxakarma_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/Sabxakarma_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/buxXyarWa_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/buxXyarWa_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/prawyavasAnArWa_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/prawyavasAnArWa_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/shakaadi.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/shakaadi.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/shlish_aadi.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/shlish_aadi.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/akarmaka_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/akarmaka_dhaatu.cmx :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/vAkyakarma_dhaatu.cmo :
+../../MT/prog/kAraka/Prepare_Graph/DATA/AkAfkRA/vAkyakarma_dhaatu.cmx :
+data/noun_puM.cmo :
+data/noun_puM.cmx :
+data/noun_napuM.cmo :
+data/noun_napuM.cmx :
+data/noun_swrI.cmo :
+data/noun_swrI.cmx :
+../../MT/prog/kAraka/Prepare_Graph/Heritage_ML/transduction.cmo :
+../../MT/prog/kAraka/Prepare_Graph/Heritage_ML/transduction.cmx :
+../../MT/prog/kAraka/Prepare_Graph/Heritage_ML/min_lexer.cmo :
+../../MT/prog/kAraka/Prepare_Graph/Heritage_ML/min_lexer.cmx :

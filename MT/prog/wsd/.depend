@@ -1,0 +1,88 @@
+/home/osboxes/Zen/ML/gen.cmo :
+/home/osboxes/Zen/ML/gen.cmx :
+/home/osboxes/Zen/ML/list2.cmo :
+/home/osboxes/Zen/ML/list2.cmx :
+/home/osboxes/Zen/ML/word.cmo : \
+    /home/osboxes/Zen/ML/list2.cmo
+/home/osboxes/Zen/ML/word.cmx : \
+    /home/osboxes/Zen/ML/list2.cmx
+/home/osboxes/Zen/ML/share.cmi :
+/home/osboxes/Zen/ML/share.cmo : \
+    /home/osboxes/Zen/ML/share.cmi
+/home/osboxes/Zen/ML/share.cmx : \
+    /home/osboxes/Zen/ML/share.cmi
+/home/osboxes/Zen/ML/unshare.cmo : \
+    /home/osboxes/Zen/ML/trie.cmo
+/home/osboxes/Zen/ML/unshare.cmx : \
+    /home/osboxes/Zen/ML/trie.cmx
+/home/osboxes/Zen/ML/trie.cmo : \
+    /home/osboxes/Zen/ML/word.cmo \
+    /home/osboxes/Zen/ML/list2.cmo \
+    /home/osboxes/Zen/ML/gen.cmo
+/home/osboxes/Zen/ML/trie.cmx : \
+    /home/osboxes/Zen/ML/word.cmx \
+    /home/osboxes/Zen/ML/list2.cmx \
+    /home/osboxes/Zen/ML/gen.cmx
+/home/osboxes/Zen/ML/mini.cmo : \
+    /home/osboxes/Zen/ML/trie.cmo \
+    /home/osboxes/Zen/ML/share.cmi \
+    /home/osboxes/Zen/ML/gen.cmo
+/home/osboxes/Zen/ML/mini.cmx : \
+    /home/osboxes/Zen/ML/trie.cmx \
+    /home/osboxes/Zen/ML/share.cmx \
+    /home/osboxes/Zen/ML/gen.cmx
+/home/osboxes/Zen/ML/deco.cmo : \
+    /home/osboxes/Zen/ML/word.cmo \
+    /home/osboxes/Zen/ML/trie.cmo \
+    /home/osboxes/Zen/ML/list2.cmo
+/home/osboxes/Zen/ML/deco.cmx : \
+    /home/osboxes/Zen/ML/word.cmx \
+    /home/osboxes/Zen/ML/trie.cmx \
+    /home/osboxes/Zen/ML/list2.cmx
+/home/osboxes/Zen/ML/lexmap.cmo : \
+    /home/osboxes/Zen/ML/word.cmo \
+    /home/osboxes/Zen/ML/list2.cmo \
+    /home/osboxes/Zen/ML/deco.cmo
+/home/osboxes/Zen/ML/lexmap.cmx : \
+    /home/osboxes/Zen/ML/word.cmx \
+    /home/osboxes/Zen/ML/list2.cmx \
+    /home/osboxes/Zen/ML/deco.cmx
+/home/osboxes/Zen/ML/minimap.cmi : \
+    /home/osboxes/Zen/ML/lexmap.cmo
+/home/osboxes/Zen/ML/minimap.cmo : \
+    /home/osboxes/Zen/ML/share.cmi \
+    /home/osboxes/Zen/ML/lexmap.cmo \
+    /home/osboxes/Zen/ML/deco.cmo \
+    /home/osboxes/Zen/ML/minimap.cmi
+/home/osboxes/Zen/ML/minimap.cmx : \
+    /home/osboxes/Zen/ML/share.cmx \
+    /home/osboxes/Zen/ML/lexmap.cmx \
+    /home/osboxes/Zen/ML/deco.cmx \
+    /home/osboxes/Zen/ML/minimap.cmi
+./pada_structure.cmi :
+amuurwa.cmo :
+amuurwa.cmx :
+muurwa.cmo :
+muurwa.cmx :
+kaalavaaci.cmo :
+kaalavaaci.cmx :
+wsd.cmo : \
+    /home/osboxes/Zen/ML/trie.cmo \
+    pada_structure.cmi \
+    muurwa.cmo \
+    /home/osboxes/Zen/ML/list2.cmo \
+    kaalavaaci.cmo \
+    bank_lexer.cmo \
+    amuurwa.cmo
+wsd.cmx : \
+    /home/osboxes/Zen/ML/trie.cmx \
+    pada_structure.cmi \
+    muurwa.cmx \
+    /home/osboxes/Zen/ML/list2.cmx \
+    kaalavaaci.cmx \
+    bank_lexer.cmx \
+    amuurwa.cmx
+../kAraka/Prepare_Graph/Heritage_ML/transduction.cmo :
+../kAraka/Prepare_Graph/Heritage_ML/transduction.cmx :
+../kAraka/Prepare_Graph/Heritage_ML/min_lexer.cmo :
+../kAraka/Prepare_Graph/Heritage_ML/min_lexer.cmx :
